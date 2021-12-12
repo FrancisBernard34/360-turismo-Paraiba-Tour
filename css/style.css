@@ -260,4 +260,7 @@ footer{
   .section-1 i{
     display: inline-block;
   }
+  header .menu{
+    display: none;
+  }
 }
