@@ -25,11 +25,11 @@ html,body{
 }
 
 .header-telefone{
-  margin: 3px 100px;
+  margin: 3px 10%;
 }
 
 .header-social{
-  margin: 3px 100px;
+  margin: 3px 10%;
   padding-right: 10px;
   border-right: 2px solid white;
 }
@@ -177,12 +177,45 @@ header .menu .menu-options{
 }
 
 footer{
+  margin: 0;
+  padding: 0;
   background: linear-gradient(to right bottom,#5056af, #242a80);
-  height: 30px;
+  height: 20px;
   color: white;
 }
 
-footer p{
-  padding: 5px;
+.footer-texto{
+  text-align: center;
 }
 
+.footer-texto p{
+  display: inline-block;
+}
+
+@media screen and (max-width: 900px){
+  .header-telefone{
+    margin: 3px 5%;
+  }
+
+  .header-social{
+    margin: 3px 5%;
+  }
+
+  .galeria-fotos img{
+    width: 90vh;
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .header-contato{
+    display: none;
+  }
+  .galeria-fotos img{
+    width: 60vh;
+    height: 30vh;
+  }
+  .footer-texto p{
+    font-size: 12px;
+  }
+}
